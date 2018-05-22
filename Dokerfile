@@ -3,6 +3,6 @@ RUN mkdir -p /app
 WORKDIR /app  
 COPY package.json .  
 RUN npm install  
-COPY index.html .  
+COPY src/index.html .  
 EXPOSE 8626  
-CMD [ "node", "index.html" ]  
+CMD [ "node", "src/index.html" ]  
